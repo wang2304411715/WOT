@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="keywords" content="坦克世界,轻型坦克,中型坦克,重型坦克,自行反坦克,坦克歼击车,二战题材,美国坦克,德国坦克,苏联坦克,中国坦克,法国坦克" />
+	<meta name="description" content="全世界男人的战争网游-坦克压倒一切,坦克新生 战斗不止！">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="wangzhonglu">
+	<title>坦克新生 战斗不止！</title>
+
+	<link rel="icon"       href="favicon.ico">
+	<link rel="stylesheet" href="css/Vidage.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<audio id="audioPlayer" preload="auto" autoplay="autoplay" src="source/music/maintheme.mp3">
+    <p>抱歉您的浏览器不支持 audio 元素。</p>
+</audio>
+<!-- 侧边菜单 -->
+<div class="menuBottomBg positionFix bgNoRepeat"></div>
+<div id="menuBg" class="bgCenter bgNoRepeat">
+    <ul>
+        <li data-menuanchor="page1" class="spoke1 active"><a class="homePage" href="#page1">首页</a></li>
+        <li data-menuanchor="page2" class="spoke2"><a class="newEngine" href="#page2">全新引擎</a></li>
+        <li data-menuanchor="page3" class="spoke3"><a href="#page3">重制地图</a></li>
+        <li data-menuanchor="page4" class="spoke4"><a href="#page4">重制音乐</a></li>
+        <li data-menuanchor="page5" class="spoke5"><a href="#page5">独家献礼</a></li>
+        <li data-menuanchor="page6" class="spoke6"><a class="testProgram" href="#page6">测试程序</a></li>
+    </ul>
+</div>
+
+<div class="mask">
+    <div class="videoPlayer">
+        <a class="close positionAb bgCenter bgNoRepeat" href="javascript:void(0);"></a>
+        <video id="myVideo" src="" width="100%" height="100%" controls="controls" autoplay="autoplay">
+            <p>您的浏览器不支持 HTML5 video  标签。</p>
+        </video>
+    </div>
+</div>
+
+<!-- 满屏主页 -->
+<div id="wot">
+	<!-- 第一屏 -->
+    <div class="section bgP1 positionRe overHidden">
+    	<div class="Vidage">
+            <div class="Vidage__image"></div>
+            <video id="VidageVideoP1" class="Vidage__video" preload="metadata" loop autoplay muted>
+                <source src="source/video/zhutibeijing.mp4" type="video/mp4">
+            </video>
+        </div>
+        <a class="video_btn positionAb" data-src="first.mp4" href="javascript:void(0);"></a>
+        <img class="slogan positionAb" src="source/images/p1/slogan.png">
+        <img class="mouse positionAb" src="source/images/p1/mouse.png">
+    </div>
+	<!-- 第二屏 -->
+    <div class="section bgP2 positionRe overHidden">
+        <div class="Vidage">
+            <video id="VidageVideoP2" class="Vidage__video" preload="metadata" loop autoplay muted>
+                <source src="source/video/features/wuli_v1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <img class="slogan positionAb" src="source/images/p2/slogan.png">
+        <div class="videoList positionAb bgCenter bgNoRepeat">
+            <div class="features video1 active positionAb ac">
+                <a data-feature="wuli_v1.mp4" href="javascript:void(0);">
+                    <img src="source/images/p2/video1.png">
+                </a>
+                <p class="features_txt">物理</p>
+            </div>
+            <div class="features video2 positionAb ac">
+                <a data-feature="guangxiao_v1.mp4" href="javascript:void(0);">
+                    <img src="source/images/p2/video2.png">
+                </a>
+                <p class="features_txt">光源</p>
+            </div>
+            <div class="features video3 positionAb ac">
+                <a data-feature="shuiti_v1.mp4" href="javascript:void(0);">
+                    <img src="source/images/p2/video3.png">
+                </a>
+                <p class="features_txt">水体</p>
+            </div>
+            <div class="features video4 positionAb ac">
+                <a data-feature="zhiwu_v1.mp4" href="javascript:void(0);">
+                    <img src="source/images/p2/video4.png">
+                </a>
+                <p class="features_txt">草木</p>
+            </div>
+            <div class="features video5 positionAb ac">
+                <a data-feature="qilang_v1.mp4" href="javascript:void(0);">
+                    <img src="source/images/p2/video5.png">
+                </a>
+                <p class="features_txt">气浪</p>
+            </div>
+            <div class="features video6 positionAb ac">
+                <a data-feature="shijie_v1.mp4" href="javascript:void(0);">
+                    <img src="source/images/p2/video6.png">
+                </a>
+                <p class="features_txt">视界</p>
+            </div>
+        </div>
+    </div>
+    <!-- 第三屏 -->
+    <div class="section bgP3 bgCover bgNoRepeat">
+        <img class="slogan positionRe" src="source/images/p3/slogan.png">
+        <a class="video_btn positionRe" data-src="second.mp4" href="javascript:void(0);"></a>
+    </div>
+    <!-- 第四屏 -->
+    <div class="section bgP4 bgNoRepeat positionRe">
+        <img class="slogan positionRe" src="source/images/p4/slogan.png">
+        <div class="CD_music positionAb overHidden">
+                <img class="positionAb CD_position" src="source/images/p4/shadow.png">
+                <img class="positionAb CD_position" src="source/images/p4/DISK.png">
+                <img class="positionAb CD_position CD_cover CDRotate" src="source/images/p4/DISK0.png">
+                <img class="positionAb CD_position light lightIn" src="source/images/p4/light.png">
+        </div>
+        <div class="positionAb CD_Ctrl">
+                <img src="source/images/p4/controllerArm.png">
+        </div>
+        <div class="songPanel positionAb ac">
+            <ul class="songList">
+                <li data-num="5">埃里-哈罗夫序曲</li>
+                <li data-num="6">普罗霍洛夫卡WG Fest序曲</li>
+                <li data-num="0" class="currentSong">《坦克世界》重制版主章节</li>
+                <li data-num="1">尼德堡序曲</li>
+                <li data-num="2">冰川之地序曲</li>
+            </ul> 
+        </div>
+        <div class="musicPlayer positionAb">
+                <div class="progress positionAb">
+                    <div class="currentTime positionAb"></div>
+                </div>
+                <div class="music_Ctrl">
+                    <div class="prev positionAb bgCenter bgNoRepeat" title="上一曲"></div>
+                    <div class="play positionAb bgCenter bgNoRepeat" title="播放"></div>
+                    <div class="next positionAb bgCenter bgNoRepeat" title="下一曲"></div>
+                    <div class="muted positionAb bgCenter bgNoRepeat" title="静音"></div>
+                </div>
+                <a class="downloadBtn positionAb bgCover bgNoRepeat" href="source/zipFile/maintheme.rar"></a>
+        </div>
+    </div>
+    <!-- 第五屏 -->
+    <div class="section bgP5 positionRe bgCenter bgCover bgNoRepeat">
+        <img class="slogan positionRe" src="source/images/p5/slogan.png">
+        <img class="comming positionRe" src="source/images/p5/come.png">
+        <img class="fire positionAb" src="source/images/p5/fire.png">
+    </div>
+    <!-- 第六屏 -->
+    <div class="section bgP6 positionRe bgCenter bgNoRepeat">
+        <img class="slogan positionRe" src="source/images/p6/slogan.png">
+        <img class="pc positionRe" src="source/images/p6/pc.png">
+    </div>
+</div>
+    <script src="js/jquery1.11.3.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/Vidage.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+         new Vidage("#VidageVideoP1");
+         new Vidage("#VidageVideoP2");
+    </script>
+</body>
+</html>

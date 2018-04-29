@@ -1,0 +1,645 @@
+@charset "utf-8";
+
+html,
+body,
+ul,
+li,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "微软雅黑", "宋体", "Arail";
+    font-size: 16px;
+    line-height: 28px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+	transition: all .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.yellow {
+    color: #ffd200
+}
+
+.hide {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.ac {
+    text-align: center;
+}
+
+.overHidden {
+    overflow: hidden;
+}
+
+.positionRe {
+    position: relative;
+}
+
+.positionAb {
+    position: absolute;
+}
+
+.positionFix {
+    position: fixed;
+}
+
+div.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: rgba(0,0,0,.8);
+}
+
+div.mask div.videoPlayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -400px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(0,0,0);
+}
+
+div.videoPlayer > a.close {
+    display: block;
+    top: 0;
+    left: 100%;
+    margin-left: -45px;
+    width: 45px;
+    height: 45px;
+    z-index: 300;
+    background-image: url(../source/images/p1/close.png);
+}
+
+/************** fullPage **************/
+
+.menuBottomBg {
+    left: -357px;
+    top: 40%;
+    z-index: 99;
+    width: 523px;
+    height: 523px;
+    background-image: url(../source/images/nva_bg.png);
+    background-position: 50% -5px;
+    margin-top: -250px;
+}
+
+#menuBg {
+    position: fixed;
+    left: -357px;
+    top: 40%;
+    z-index: 100;
+    margin-top: -261px;
+    width: 523px;
+    height: 523px;
+    opacity: 1;
+    background-image: url(../source/images/nva_bg2.png);
+         transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+#menuBg li {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -10px;
+    width: 265px;
+    height: 20px;
+         transform-origin: left center;
+    -moz-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    -o-transform-origin: left center;
+}
+
+#menuBg a {
+    position: absolute;
+    right: -70px;
+    top: 5px;
+    display: block;
+    width: 70px;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+         transition: all 0s;
+    -moz-transition: all 0s;
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+}
+
+.bgCenter {
+    background-position: center;
+}
+
+.bgCover {
+	        background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.bgNoRepeat {
+    background-repeat: no-repeat;
+}
+
+.bgP3 {
+    background-image: url(../source/images/p3/bg.jpg);
+    background-position: center top;
+}
+
+.bgP4 {
+    background-image: url(../source/images/p4/bg.jpg);
+    background-position: center top;
+}
+
+.bgP5 {
+    background-image: url(../source/images/p5/bg.jpg);
+}
+
+.bgP6 {
+    background-image: url(../source/images/p6/bg.jpg);
+            background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
+
+#menuBg li a.testProgram {
+    right: -40px;
+    top: 40px;
+         transform: rotate(-300deg);
+    -moz-transform: rotate(-300deg);
+    -webkit-transform: rotate(-300deg);
+    -o-transform: rotate(-300deg);
+}
+
+#menuBg li a.homePage {
+    right: -80px;
+    top: 0px;
+         transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+#menuBg li a.newEngine {
+    right: -50px;
+    top: -40px;
+         transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+}
+
+#menuBg li.spoke2 {
+         transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+
+#menuBg li.spoke3 {
+         transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+}
+
+#menuBg li.spoke4 {
+         transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+#menuBg li.spoke5 {
+         transform: rotate(240deg);
+    -moz-transform: rotate(240deg);
+    -webkit-transform: rotate(240deg);
+    -o-transform: rotate(240deg);
+}
+
+#menuBg li.spoke6 {
+         transform: rotate(300deg);
+    -moz-transform: rotate(300deg);
+    -webkit-transform: rotate(300deg);
+    -o-transform: rotate(300deg);
+}
+
+/************** /fullPage **************/
+
+div.bgP1 a.video_btn {
+    display: block;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 128px;
+    height: 80px;
+    background: url(../source/images/p1/video_btn.png) no-repeat;
+}
+
+div.bgP1 img.slogan {
+    top: 154px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 857px;
+    height: 147px;
+}
+
+div.bgP1 img.mouse {
+    left: 0;
+    right: 0;
+    bottom: 137px;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+
+div.bgP2 img.slogan {
+    display: block;
+    top: 183px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1031px;
+}
+
+div.bgP2 div.videoList {
+    bottom: 110px;
+    width: 100%;
+    height: 112px;
+    background-image: url(../source/images/p2/line.png);
+    background-size: 1920px 17px;
+}
+
+div.videoList > div.features {
+    left: 50%;
+    top: 0;
+    margin: 0 0;
+    width: 200px;
+    height: 100%;
+    font-size: 16px;
+             transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+div.videoList > div.video1 {
+    margin-left: -625px;
+}
+
+div.videoList > div.video2 {
+    margin-left: -415px;
+}
+
+div.videoList > div.video3 {
+    margin-left: -205px;
+}
+
+div.videoList > div.video4 {
+    margin-left: 5px;
+}
+
+div.videoList > div.video5 {
+    margin-left: 215px;
+}
+
+div.videoList > div.video6 {
+    margin-left: 425px;
+}
+
+div.features a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.features img {
+    width: 100%;
+}
+
+div.features p {
+    width: 100%;
+    color: #fff;
+}
+
+div.videoList > div.features:hover {
+    top: -6px;
+}
+
+div.videoList > div.active a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #ffd200;
+}
+
+div.videoList > div.active p {
+    width: 100%;
+    color: #ffd200;
+}
+
+div.features:hover a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #ffd200;
+}
+
+div.features:hover p {
+    width: 100%;
+    color: #ffd200;
+}
+
+div.bgP3 a.video_btn {
+    display: block;
+    top: 232px;
+    margin: 0 auto;
+    width: 128px;
+    height: 80px;
+    background: url(../source/images/p3/videobtn.png) no-repeat;
+}
+
+div.bgP3 img.slogan {
+    display: block;
+    top: 60px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+div.bgP4 img.slogan {
+    display: block;
+    top: 80px;
+    margin: 0 auto;
+    width: 900px;
+}
+
+div.CD_music {
+    left: 50%;
+    top: 350px;
+    margin-left: -555px;
+    width: 490px;
+    height: 490px;
+}
+
+div.CD_position {
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.CDRotate {
+    /*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
+    animation: CDRotate 5s infinite linear;
+}
+@keyframes CDRotate { 
+    from {
+            transform:rotate(0);
+    } 
+    to {
+            transform:rotate(360deg);
+    } 
+}
+
+.lightIn {
+    /*forwards:当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。*/
+    animation: lightIn 2s ease-in-out .5s 1 forwards;
+}
+@keyframes lightIn { 
+    from { 
+            opacity: 0;
+    } 
+    to { 
+            opacity: 1;
+    } 
+}
+
+.lightOut {
+    animation: lightOut 1s ease-in-out 1 forwards;
+}
+@keyframes lightOut { 
+    from { 
+            opacity: 1;
+    } 
+    to { 
+            opacity: 0;
+    } 
+}
+
+.CD_Ctrl {
+    left: 50%;
+    top: 261px;
+    margin-left: -227px;
+    width: 259px;
+    height: 527px;
+    transform-origin: 85% 15%;
+    -moz-transform-origin: 85% 15%;
+    -webkit-transform-origin: 85% 15%;
+    -o-transform-origin: 85% 15%;
+    transition: all 0.8s;
+}
+
+/*0-30旋转*/
+.CD_CtrlRotate {
+    left: 50%;
+    top: 261px;
+    margin-left: -227px;
+    width: 259px;
+    height: 527px;
+    transform: rotate(-30deg);
+         transform-origin: 85% 15%;
+    -moz-transform-origin: 85% 15%;
+    -webkit-transform-origin: 85% 15%;
+    -o-transform-origin: 85% 15%;
+    transition: all 0.8s;
+}
+
+div.songPanel {
+    top: 230px;
+    left: 50%;
+    width: 630px;
+    height: 200px;
+    color: #bbbbbb;
+    line-height: 40px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+ul.songList > li {
+    cursor: pointer;
+}
+
+ul.songList > li.currentSong {
+    color: #ffd200;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+audio > p {
+    color: #FE0404;
+}
+
+div.musicPlayer {
+    top: 450px;
+    left: 50%;
+    width: 630px;
+    height: 246px;
+}
+
+div.progress {
+    box-sizing: border-box;
+    left: 128px;
+    width: 390px;
+    height: 5px;
+    border: 1px solid #5b5b5b;
+}
+
+div.currentTime {
+    width: 10%;
+    height: 3px;
+    background: #6b6b6b;
+}
+
+div.currentTime::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 11px;
+    height: 11px;
+    background: #b4b4b4;
+    border-radius: 50%;
+}
+
+div.music_Ctrl > div.prev {
+    top: 65px;
+    left: 238px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../source/images/p4/button_prev.png);
+    cursor: pointer;
+}
+
+div.music_Ctrl > div.play {
+    top: 55px;
+    left: 307px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../source/images/p4/button_pause.png);
+              transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    cursor: pointer;
+}
+
+div.music_Ctrl > div.next {
+    top: 65px;
+    left: 393px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../source/images/p4/button_next.png);
+    cursor: pointer;
+}
+
+div.music_Ctrl > div.muted {
+    top: 64px;
+    left: 460px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../source/images/p4/voice_on.png);
+              transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    cursor: pointer;
+}
+
+a.downloadBtn {
+    bottom: 0;
+    margin-left: 238px;
+    width: 180px;
+    height: 62px;
+    background-image: url(../source/images/p4/btn.png);
+    background-position: center top;
+}
+
+a.downloadBtn:hover {
+    background-position: center bottom;
+}
+
+div.bgP5 img.slogan {
+    display: block;
+    top: 70px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+div.bgP5 img.comming {
+    display: block;
+    top: 187px;
+    margin: 0 auto;
+    width: 833px;
+}
+
+div.bgP5 img.fire {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.bgP6 img.slogan {
+    display: block;
+    top: 50px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+div.bgP6 img.pc {
+    display: block;
+    top: 66px;
+    left: 221px;
+    margin: 0 auto;
+    width: 400px;
+}
