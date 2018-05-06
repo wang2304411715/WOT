@@ -534,7 +534,6 @@ div.progress {
 }
 
 div.currentTime {
-    width: 10%;
     height: 3px;
     background: #6b6b6b;
 }
